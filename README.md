@@ -7,5 +7,9 @@ Concepts about the exam problems and discussion about various optimized solution
 
 All tools and documentations will be a showcase of recent Machine Learning and AI Tools. To promote usage of Advanced Technology and also promoting creativity in the tech field among 42 schools
 
+Tools Used :
+1. Midjourney AI to create Image
+2. Canva to add text and redefine it.
+
 
 

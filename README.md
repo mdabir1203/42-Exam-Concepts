@@ -5,7 +5,7 @@
 
 Concepts about the exam problems and discussion about various optimized solution
 
-All tools and documentations will be an showcase of recent Machine Learning and AI Tools. To promote usage of Advanced Technology
+All tools and documentations will be a showcase of recent Machine Learning and AI Tools. To promote usage of Advanced Technology and also promoting creativity in the tech field among 42 schools
 
 
 

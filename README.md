@@ -10,6 +10,7 @@ All tools and documentations will be a showcase of recent Machine Learning and A
 Tools Used :
 1. Midjourney AI to create Image
 2. Canva to add text and redefine it.
+3. Using Chatgpt3 to create markdowns / markdowns and also having an human intervention to redefine it.
 
 
 

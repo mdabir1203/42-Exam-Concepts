@@ -5,7 +5,7 @@
 
 Concepts about the Exam problems and Discussion about various Optimized Solution
 
-All tools and documentations will be a showcase of recent Machine Learning and AI Tools. To promote usage of Advanced Technology and also promoting creativity in the tech field among 42 schools
+All tools and documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote creativity and critical thinking in the field among 42 schools
 
 Tools Used :
 1. Midjourney AI to create Image

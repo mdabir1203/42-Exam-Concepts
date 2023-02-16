@@ -54,3 +54,5 @@ void common_chars(char *s1, char *s2)
 	write(1, res, strlen(res));
 	write(1, "\n", 1);
 }
+
+

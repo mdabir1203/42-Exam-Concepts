@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 11:36:24 by galpers           #+#    #+#             */
-/*   Updated: 2023/01/27 00:45:47 by mabbas           ###   ########.fr       */
+/*   Updated: 2023/02/02 07:20:11 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(int ac, char **av)
 		{
 			k = 1;
 			if (str[i] >= 'A' && str[i] <= 'Z')
-				k = str[i] - 64;
+				k = str[i] - 64; // ascii compare to repeat 
 			if (str[i] >= 'a' && str[i] <= 'z')
 				k = str[i] - 96;
 			while (k >= 1)

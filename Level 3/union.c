@@ -61,3 +61,11 @@ int main(int ac,char **av)
 	}
 }
 
+int main(int ac, char **av)
+{
+	if (ac == 3)
+		common_chars(av[1], av[2]);
+	else
+		write(1, "\n", 1);
+	return (0);
+}

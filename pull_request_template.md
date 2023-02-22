@@ -11,7 +11,7 @@ Below I will present you how to contribute to the Repo step-by-step
 
 [ ] Add in doxygen comment with ``` /** whatever you have to say **/ ```
 
-[ ] Add an **Intutive understanding**  of your given solution. 
+[ ] Add an **Intutive understanding**  of your given solution in the doxygen. 
 
 [ ] Add the benefits of your Algorithmic solution. with space and time complexity if possible.
 

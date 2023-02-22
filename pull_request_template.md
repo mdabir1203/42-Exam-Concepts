@@ -1,12 +1,20 @@
 Below I will present you how to contribute to the Repo step-by-step
 
-[ ] git clone the repo ```git clone xxx.git ```
+[ ] git clone the repo ```git clone xxx.git ``` .
+
+
 [ ] add a branch by ```git branch xxx(any name) ```
+
 [ ] add the Subject in comments for the code / you can add the **Subject** in separate.
+
 [ ] add your best possible thought solution
+
 [ ] Add in doxygen comment with ``` /** whatever you have to say **/ ```
+
 [ ] Add an **Intutive understanding**  of your given solution. 
+
 [ ] Add the benefits of your Algorithmic solution. with space and time complexity if possible.
+
 [ ] Add and commit to the git changes ```git add *``` and ```git commit -m "soln: added lv1 fncName" ```
 
 When all is done. Do a pull request and finish it.

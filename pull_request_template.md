@@ -13,7 +13,7 @@ Below I will present you how to contribute to the Repo step-by-step
 
 [ ] Add an **Intutive understanding**  of your given solution in the doxygen. 
 
-[ ] Add the benefits of your Algorithmic solution. with space and time complexity if possible.
+[ ] Add the benefits of your Algorithmic solution. with space and time complexity if possible under the intutive solution.
 
 [ ] Add and commit to the git changes ```git add *``` and ```git commit -m "soln: added lv1 fncName" ```
 

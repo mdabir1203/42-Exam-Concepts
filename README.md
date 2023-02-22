@@ -5,12 +5,12 @@
 
 Concepts about the Exam problems and Discussion about various Optimized Solution and Intutive discussions
 
-All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote creativity and critical thinking in the field among 42 schools
+All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, Promote Creativity and Critical thinking in the peers among 42 schools
 
 Tools Used :
 1. Midjourney AI to create Image
 2. Canva to add text and redefine it.
-3. Using Chatgpt3 to create markdowns - resolve intutive discussions and also having an human intervention to redefine it.
+
 
 Sneakpeek:
 

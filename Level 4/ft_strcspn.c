@@ -28,6 +28,7 @@ or when the function is called multiple times.
  * If none of the names contain ‘e’ or ‘s’, then the function would return the length of the list.
  * Els if the list is [“Anna”, “Ben”, “Cathy”, “Dan”, “Emma”], then the function would return 5 because none of the names match.
  */
+ /** Used in : Filter or search for items based on some criteria. For example, you can use it to find products that have certain features or keywords in their descriptions.
 
 #include <stddef.h>
 #include <stdbool.h>

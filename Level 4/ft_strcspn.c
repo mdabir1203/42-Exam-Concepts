@@ -21,6 +21,14 @@ or when the function is called multiple times.
 - const and static modifiers to improve performance and readability
  **/
 
+/** Intutive concept:
+ * Imagine having a list of names and finding the first name containing either ‘e’ or ‘s’.
+ * Approach is to scan the list and counting how many names we checked before finding a match.
+ * For example, if the list is [“Alice”, “Bob”, “Charlie”, “David”, “Eve”], then the function would return 2 because it checked Alice and Bob before finding Charlie, which contains ‘e’.
+ * If none of the names contain ‘e’ or ‘s’, then the function would return the length of the list.
+ * Els if the list is [“Anna”, “Ben”, “Cathy”, “Dan”, “Emma”], then the function would return 5 because none of the names match.
+ */
+
 #include <stddef.h>
 #include <stdbool.h>
 #include <string.h>

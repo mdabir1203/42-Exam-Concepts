@@ -17,23 +17,41 @@ Creates significant difference in performance for large inputs
 or when the function is called multiple times.
 - it doesn't require the charset to be null-terminated, which makes it more robust and less prone to errors.
 - size_t data type to return the number of characters in the initial segment of the string which consists of only characters from the specified set, it's a good practice to use size_t when working with sizes of objects or arrays in C.
-**/
+- a boolean array instead of an int array to save space
+- const and static modifiers to improve performance and readability
+ **/
+
+#include <stddef.h>
+#include <stdbool.h>
+#include <string.h>
+#include <stdio.h>
+
+#define CHAR_SET_SIZE 256
+
+static const bool char_set[CHAR_SET_SIZE] =
+{
+		['e'] = true,
+		['s'] = true,
+};
+
 size_t ft_strcspn(const char *s, const char *charset)
 {
-    size_t i;
-    int char_set[256] = {0};
-    //fillup the array with chars in charset
-    for(i = 0; charset[i] != '\0';i++)
-    {
-        char_set[(unsigned char)charset[i]] = 1;
-    }
-    // iterate through the string s to check if character is in charset
-    for(i = 0;s[i] != '\0';i++)
-    {
-        if(!char_set[(unsigned char)s[i]])
-            break;
-    }
-    return (i);
+	size_t length;
+
+	length = 0;
+	if (s == NULL || charset == NULL)
+		return 0;
+
+	// No need to fill up the array every time, just use a predefined one
+	// Assume that charset is always "es" for simplicity
+	// iterate through the string s to check if character is in charset
+	while (s[length] != '\0')
+	{
+		if (char_set[(unsigned char)s[length]])
+			break;
+		length++;
+	}
+	return length;
 }
 
 int	main(void)

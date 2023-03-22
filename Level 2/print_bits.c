@@ -31,7 +31,34 @@ int main(void)
 
 /** Alternative soln:
  * check the value of the ith bit in the c byte,
- * and print either '0' or '1' based on its value **/
+ * and print either '0' or '1' based on its value
+ * unsigned char bit = (c & (1 << i)) ? '1': '0';
+    write(1, &bit, sizeof(bit));
 
-unsigned char bit = (c & (1 << i)) ? '1': '0';
-write(1, &bit, sizeof(bit));
+ *  **/
+
+
+void ft_putchar(char c)
+{
+    write(1, &c, sizeof(c));
+}
+
+void print_bits(unsigned char c)
+{
+    int i;
+    i = 7;
+    while (i >= 0)
+    {
+        if (c & (1 << i))
+            ft_putchar('1');
+        else
+            ft_putchar('0');
+
+        i--;
+    }
+}
+
+int main(void)
+{
+    print_bits(2);
+}

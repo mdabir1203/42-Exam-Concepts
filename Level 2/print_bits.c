@@ -10,6 +10,15 @@
  * Usage: Manipulate binary numbers -> compact and efficient
 **/
 
+/**
+Real life Analogy: 
+Imagine having a room full of light bulbs that can be turned on or off.
+Each light bulb represents a single bit, either 0 or 1.
+You want to communicate a number to someone using these light bulbs,
+but instead of using decimal or hexadecimal notation, we want to use binary.
+the function would "turn on" or "turn off" the appropriate light bulbs in 
+the room to display the binary representation of the number
+**/
 #include<unistd.h>
 void print_bits(unsigned char c)
 {
@@ -34,7 +43,6 @@ int main(void)
  * and print either '0' or '1' based on its value
  * unsigned char bit = (c & (1 << i)) ? '1': '0';
     write(1, &bit, sizeof(bit));
-
  *  **/
 
 

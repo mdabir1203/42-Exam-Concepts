@@ -26,3 +26,10 @@ size_t ft_strcspn(const char *s, const char *reject)
     }
     return (p - s);
 }
+
+int main(int ac,char **av)
+{
+    ft_strcspn(*(av + 1), "b");
+    return (0);
+
+}

@@ -48,5 +48,5 @@ void	print_bits(unsigned char c)
 int	main(void)
 {
 	print_bits(2);
-	return (0);
+	return (0);	
 }

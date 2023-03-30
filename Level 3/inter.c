@@ -60,7 +60,8 @@ Finally, it prints out the list of common clubs
 #include <stdbool.h>
 
 char *ft_strchr(const char *s, int c) {
-    while (*s != '\0') {
+    while (*s != '\0')
+	{
         if (*s == c) {
             return (char *)s;
         }
@@ -99,4 +100,3 @@ int	main(int ac, char **av)
 	common_chars(av[1], av[2]);
 	return (0);
 }
-

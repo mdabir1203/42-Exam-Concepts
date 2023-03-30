@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: make
-      run: make
+    - name: gcc 
+      run: gcc -Wall -Werror -Wextra
     - name: Automatic pull request review
       uses: AndrewMusgrave/automatic-pull-request-review@0.0.2
     - name: Pull-Request-Typography

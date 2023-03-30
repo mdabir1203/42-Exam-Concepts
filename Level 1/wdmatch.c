@@ -38,10 +38,6 @@ int wdmatch(const char *s1,const char *s2)
 
 int main(int ac,char **av)
 {
-    // if (ac == 2)
-    //     wdmatch(av[1],av[2]);
-    // else
-    //     write(1,"\n",1);
     if (ac != 3)
     {
         write(1, "\n", 1);

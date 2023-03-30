@@ -9,6 +9,7 @@ The second option would be quicker and more efficient.
 
 Usage: Mirrored message / Display countdown timer
  */
+#include <unistd.h>
 
 int	main(int ac, char **av)
 {

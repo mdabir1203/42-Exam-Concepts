@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 11:36:24 by galpers           #+#    #+#             */
-/*   Updated: 2023/02/02 07:20:11 by mabbas           ###   ########.fr       */
+/*   Updated: 2023/03/30 02:41:44 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,24 @@ $>./repeat_alpha "" | cat -e
 $
 $>  
 **/
+
+/* Real life Analogy/ Usage 
+ * 
+A headline might have the first letter of each word
+emphasized or bolded to draw the reader's attention,
+while the body text might have each letter emphasized 
+a number of times based on its position in the alphabet. 
+This could make the text more visually interesting 
+and engaging for the reader.
+
+Alternatively,
+This program could be used in typography or graphic design to create interesting
+and visually striking text effects, where each letter 
+is repeated a different number of
+times based on its position in the alphabet.
+
+*/
+
 #include <unistd.h>
 
 int	main(int ac, char **av)
@@ -61,10 +79,9 @@ int	main(int ac, char **av)
 				k = str[i] - 64; // ascii compare to repeat 
 			if (str[i] >= 'a' && str[i] <= 'z')
 				k = str[i] - 96;
-			while (k >= 1)
+			while (k-- >= 1) // character repeat based on index
 			{
 				write(1, &str[i], 1);
-				k--;
 			}
 			i++;
 		}
@@ -73,7 +90,9 @@ int	main(int ac, char **av)
 	return (0);
 }
 
-/** Optimized soln
+
+
+/* Optimized soln
 - for loop, k is initialized to determine the current character is uppercase or lowercase. 
   For uppercase characters, its value is the character's ASCII value minus 64, for lowercase characters, 
   the value is the character's ASCII value minus 96.

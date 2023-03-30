@@ -11,8 +11,9 @@
  * N:B: Assuming both s and reject are valid strings. If either of them is NULL, the behavior of the function
  *      is undefined.
  **/
+#include <stdlib.h>
 
-size_t ft_strcspn(const char *s, const char *reject)
+size_t  ft_strcspn(const char *s, const char *reject)
 {
     const char *p = s;
     while (*p)
@@ -27,9 +28,5 @@ size_t ft_strcspn(const char *s, const char *reject)
     return (p - s);
 }
 
-int main(int ac,char **av)
-{
-    ft_strcspn(*(av + 1), "b");
-    return (0);
 
-}
+write(1, "a", 1);

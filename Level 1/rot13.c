@@ -27,7 +27,7 @@ int main(int ac,char **av)
                 str[i] = (str[i] - 'a' + 13) % 26 + 'a';
             else if (str[i] >= 'A' && str[i] <= 'Z')
                 str[i] = (str[i] - 'A' + 13) % 26 + 'A';
-            write(1, &av[1][i], 1);
+            write(1, &str[i], 1);
             i++;
         }
     }

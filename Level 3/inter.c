@@ -59,14 +59,17 @@ Finally, it prints out the list of common clubs
 #include <string.h>
 #include <stdbool.h>
 
-void ft_strchr(const char *s, int c)
-{
-	if (*s == '\0')
-		return (NULL);
-	else if (*s == c)
-		return (char *)s;
-	else
-		return ft_strchr(s + 1, c);
+char *ft_strchr(const char *s, int c) {
+    while (*s != '\0') {
+        if (*s == c) {
+            return (char *)s;
+        }
+        s++;
+    }
+    if (*s == c) {
+        return (char *)s;
+    }
+    return NULL;
 }
 
 void	common_chars(char *s1, char *s2)
@@ -77,9 +80,9 @@ void	common_chars(char *s1, char *s2)
 	int res_ind = 0;
 	while (s1[i])
 	{
-		if(!seen[s1[i]] && strchr(s2, s1[i]))
+		if(!seen[(int)s1[i]] && strchr(s2, s1[i]))
 		{
-			seen[s1[i]] = true;
+			seen[(int)s1[i]] = true;
 			res[res_ind++] = s1[i];
 		}
 		i++;
@@ -96,3 +99,4 @@ int	main(int ac, char **av)
 	common_chars(av[1], av[2]);
 	return (0);
 }
+

@@ -38,34 +38,32 @@ For each character, the program checks if the corresponding element in the ascii
 The program then ends with a newline character and returns 0.
 **/
 
+#include <stdbool.h>
+#include <unistd.h>
+
 int main(int ac,char **av)
 {
 	if (ac == 3)
 	{
-		int ascii[255] = {0}; // keep track of chars appeared in strings
-		for(int i = 0;i < 3;i++)
+		bool seen[256] = {false};
+		int i = 1;
+		int j = 0;
+		while (i < 3)
 		{
-			int j = 0;
-			while(av[i][j])
+			while (av[i][j])
 			{
-				if (ascii[av[i][j]] == 0)
+				if (!seen[(unsigned char)av[i][j]])
 				{
-					ascii[av[i][j]] = 1;
+					seen[(unsigned char)av[i][j]] = true;
 					write(1, &av[i][j], 1);
 				}
-				j += 1;
+				j++;
 			}
+			i++;
+			j = 0;
 		}
 		write(1, "\n", 1);
 		return (0);
 	}
-}
-
-int main(int ac, char **av)
-{
-	if (ac == 3)
-		common_chars(av[1], av[2]);
-	else
-		write(1, "\n", 1);
-	return (0);
+	return (1);
 }

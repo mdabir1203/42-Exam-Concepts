@@ -20,51 +20,48 @@ everything that needs to be packed is organized efficiently and fits neatly into
 the ft_printf function can handle various types of format strings and arguments as needed.
 **/
 
-#include <unistd.h>
 #include <stdarg.h>
+#include <unistd.h>
 
-size_t ft_putstr(char *str, int len)
-{
-    while (str && str[len] && len)
-    {
-        ;
-    }
-        return (str ? write(1, str, len): write(1, "(null)", 6));
-}
-
-void ft_putnbr(long n, unsigned len,char *sign, int *size)
+void ft_putnbr(unsigned n, unsigned len, char *sign, int *size)
 {
     if (n >= len)
-        ft_putnbr(n /len, len, sign, size);
+        ft_putnbr(n / len, len, sign, size);
     *size += (int) write(1, &sign[n % len], 1);
 }
 
-void ft_puthex(long n, int len, char *sign, int *size)
+void ft_n(long n, int len, char *sign, int *size)
 {
-    (n < 0) ? (*size += (int) write(1, "-", 1),
-        ft_putnbr(-n,len, sign, size)):(ft_putnbr(n, len, sign,size));
+    (n < 0) ? (*size += (int)write(1, "-", 1),\
+    ft_putnbr(-n, len, sign, size)) : ft_putnbr(n, len, sign, size);
 }
 
+ssize_t ft_putstr(char *str, int len)
+{
+    while (str && str[len] && ++len)
+        ;
+    return (str ? write(1, str, len) : write(1, "(null)", 6));
+}
 
-int ft_printf(char *format, ...)
+int ft_printf(const char *fmt, ...)
 {
     int size = 0;
     va_list ap;
-
-    va_start(ap, format);
-    while (*format)
+    va_start(ap, fmt);
+    while (*fmt)
     {
-        if (*format == '%' && *(format + 1) == 's' && (format += 2))
+        if (*fmt == '%' && *(fmt + 1) == 's' && (fmt += 2))
             size += (int) ft_putstr(va_arg(ap, char *), 0);
-        else if (*format == '%' && *(format + 1) == 'x' && (format += 2))
+        else if (*fmt == '%' && *(fmt + 1) == 'x' && (fmt += 2))
             ft_putnbr(va_arg(ap, int), 16, "0123456789abcdef", &size);
-        else if (*format == '%' && *(format + 1) == 'd' && (format += 2))
-            ft_puthex(va_arg(ap, int), 10, "0123456789", &size);
+        else if (*fmt == '%' && *(fmt + 1) == 'd' && (fmt += 2))
+            ft_n(va_arg(ap, int), 10, "0123456789", &size);
         else
-            size += (int) write(1, format++, 1);
+            size += (int) write(1, fmt++, 1);
     }
     return (va_end(ap), size);
 }
+
 
 int main(int ac,char **av)
 {

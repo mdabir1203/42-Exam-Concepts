@@ -178,3 +178,33 @@ char	*get_next_line(int fd)
 //
 //
 //}
+
+
+
+
+/** Pointer Only Version **/
+
+
+
+
+char	*ft_strjoin(char *s1, char *s2)
+{
+	char	*str;
+	char	*res;
+	if (!s1)
+	{
+		s1 = malloc(1);
+		*s1 = '\0';
+	}
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!str)
+		return (0);
+	res = str;
+	while (*s1)
+		*res++ = *s1++;
+	while (*s2)
+		*res++ = *s2++;
+	*res = '\0';
+	free(s1);
+	return (str);
+}

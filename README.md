@@ -1,5 +1,5 @@
 # Concepts about the Exam problems and Discussion about various Optimized Solution and Intutive discussions
-<img src="https://user-images.githubusercontent.com/66947064/214869421-519e165c-2f62-4f0b-abdc-ddb0a22e42b2.png" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/66947064/214869421-519e165c-2f62-4f0b-abdc-ddb0a22e42b2.png" width="250" height="250">
 
 
 

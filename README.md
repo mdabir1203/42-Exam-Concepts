@@ -7,7 +7,7 @@
 ####  All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote Creativity and Critical thinking in the peers among 42 schools
 
 
-#####Sneakpeek:
+# Sneakpeek:
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/66947064/220529391-d00ce7d2-251a-479e-9277-bc5d20a64eec.png">
 

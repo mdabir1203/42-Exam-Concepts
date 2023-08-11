@@ -1,10 +1,10 @@
 # Concepts about the Exam problems and Discussion about various Optimized Solution and Intutive discussions
-<img src="https://user-images.githubusercontent.com/66947064/214869421-519e165c-2f62-4f0b-abdc-ddb0a22e42b2.png" width="275" height="275">
+<div align=“center”> <img src="https://user-images.githubusercontent.com/66947064/214869421-519e165c-2f62-4f0b-abdc-ddb0a22e42b2.png" width="275" height="275"> </div>
 
 
 
 
-#######  All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote Creativity and Critical thinking in the peers among 42 schools
+####  All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote Creativity and Critical thinking in the peers among 42 schools
 
 
 #####Sneakpeek:

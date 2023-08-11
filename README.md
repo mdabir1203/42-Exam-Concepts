@@ -4,7 +4,7 @@
 
 
 
-## All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote Creativity and Critical thinking in the peers among 42 schools
+#######  All the documentations will be a showcase of recent Machine Learning and AI Tools. Additionaly, promote Creativity and Critical thinking in the peers among 42 schools
 
 
 #####Sneakpeek:

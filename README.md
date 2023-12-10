@@ -10,31 +10,31 @@ Welcome to the documentation for the discussion about exam problems at 42 School
 Describe the problem statement concisely. Include key objectives and challenges. This serves as the foundation for the subsequent discussions on optimized solutions.
 
 ## Solution Showcase
-Sneak Peek
+## Features to be added :
 
-Share a glimpse of the solutions through visual representation. Use graphics or charts to highlight key aspects of the problem and the solutions.
+[ ] Share a glimpse of the solutions through visual representation. Use graphics or charts to highlight key aspects of the problem and the solutions.
 
-Sneak Peek
-Optimized Solutions
+
+
 ## Solution 1: [Optimization Technique]
 
-Provide a detailed explanation of the first optimized solution. Discuss the methodology, algorithms, or frameworks used. Include code snippets, if applicable. Highlight the advantages and drawbacks.
+Provided a detailed explanation of the first optimized solution. Discussed the methodology, algorithms, or frameworks used. Included code snippets, if applicable. Highlight the advantages and drawbacks.
 
 # Example code snippet
 Intuitive Discussions
 
 Encourage critical thinking and creativity by initiating discussions on alternative approaches, potential improvements, and open questions. Foster an environment for collaborative problem-solving.
 
-Open Questions
+## Open Questions
 
-Pose questions that challenge conventional thinking and encourage exploration.
+# Pose questions that challenge conventional thinking and encourage exploration.
 
     How might the solutions evolve with larger or smaller values?
     Are there ethical considerations in the current approach that need attention?
 
-Collaborative Forum
+# Collaborative Forum
 
-Create a forum or platform for peers to discuss and share their insights. This promotes an interactive and collaborative learning experience.
+Creating a platform for peers to discuss and share their insights. This promotes an interactive and collaborative learning experience.
 Conclusion
 
 Summarize key takeaways, insights gained, and areas for future exploration. Reinforce the importance of continuous learning and adaptability in the ever-evolving field of Programming world

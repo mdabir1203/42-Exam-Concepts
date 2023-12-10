@@ -1,7 +1,7 @@
 # Exam Problem Documentation and Optimized Solutions
 ## Introduction
 
-Welcome to the documentation for the recent machine learning and AI tools exam problem. This document aims to provide a comprehensive overview of the problem, discuss various optimized solutions, and foster creativity and critical thinking among peers across 42 schools.
+Welcome to the documentation for the discussion about exam problems at 42 School. This document aims to provide a comprehensive overview of the problem, discuss various optimized solutions, and foster creativity and critical thinking among peers across 42 schools.
 <div align="center">
   <img src="https://user-images.githubusercontent.com/66947064/214869421-519e165c-2f62-4f0b-abdc-ddb0a22e42b2.png" width="275" height="275">
 </div>
